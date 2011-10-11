@@ -299,13 +299,13 @@ public class MazeCreator
 	
 	private void createNodes()
 	{
-			for (int x = 0; x < this.size[0]; x += 1)
+		for (int x = 0; x < this.size[0]; x += 1)
+		{
+			for (int y = 0; y < this.size[1]; y += 1)
 			{
-				for (int y = 0; y < this.size[1]; y += 1)
-				{
-					this.unvisitedSet.add(new Node(x, y));
-				}
+				this.unvisitedSet.add(new Node(x, y));
 			}
+		}
 	}
 	
 	private boolean equalNodePos(Node a, Node b)
